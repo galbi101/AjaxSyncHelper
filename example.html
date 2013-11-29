@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AjaxSyncHelper test app</title>
+	<script src="lib/jquery-2.0.3.js"></script>
+	<script src="lib/underscore.js"></script>
+	<script src="lib/backbone.js"></script>
+	<script src="AjaxSyncHelper.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+<h1>AjaxSyncHelper example</h1>
+<div>
+	<span>AjaxSyncHelper is <strong style="color: red;">OFF</strong></span>
+	<button id="turnSyncOn">Turn it ON</button>
+	<div id="syncOptions" style="display: none">
+		<header>Options: </header>
+	</div>
+</div>
+<div style="margin-top: 50px;">
+	<div>
+		<span>Number of clicks: </span><span id="numOfClicks"></span>
+	</div>
+	<button id="ajaxCall">Simulate AJAX call</button><span>(click rapidly for demonstration)</span>
+	<div>
+		<span id="requestState"></span>
+		<span id="responseState"></span>
+	</div>
+	<div>
+		<h3>Accepted Clicks:</h3>
+		<div id="acceptedClicks"></div>
+	</div>
+</div>
+
+</body>
+</html>
