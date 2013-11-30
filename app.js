@@ -19,6 +19,7 @@
 			_.each(options, function(value, key) {
 				$('#syncOptions').show().append(key + ": " + value);
 			});
+			clickCounter = 0;
 			$('#acceptedClicks').append("<div>With AjaxSyncHelper activated:</div>");
 		});
 	});
